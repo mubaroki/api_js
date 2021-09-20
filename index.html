@@ -1,16 +1,34 @@
 <html>
-<style>
-.blink_live {
-    animation: blinker 1s linear infinite;
-    color: red;
-    font-weight: 700;
-}
-
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
-}
-</style>
-<div class="blink_live">LIVE API</div>
+<head>
+    <style>
+        .container {
+            position: relative;
+        }
+        .child {        
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -25px 0 0 -25px;
+        }
+        .blink_text {
+            animation: blinker 1s linear infinite;
+            color: red;
+            font-weight: 700;
+        }
+        
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <title>API</title>
+</head>
+<body class="container">
+    <div class="child">
+        <div class="blink_text">
+            MMN AGENCY LIVE API
+        </div>
+    </div>
+</body>
 </html>
